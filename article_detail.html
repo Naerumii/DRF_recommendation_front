@@ -13,6 +13,45 @@
     <title>게시물 상세</title>
 </head>
 <body class="restaurant_body">
+  <nav>
+    <div class="logo">
+      <img src="[image].png" alt="Logo Image" onclick="location.href='/index.html'"/>
+    </div>
+    <ul class="nav-links">
+      <div class="leftbox">
+          <li>
+            <a href="#" onclick="loadRecommends(); this.onclick=null"
+              >추천받기</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="location.href='/article_list.html'"
+              >게시글 보기</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="location.href='/article_create.html'"
+              >게시글 작성</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="location.href='/profile.html'">프로필</a>
+          </li>
+      </div>
+      <div class="rightbox">
+        <button
+          id="loginout"
+          type="button"
+          class="btn btn-primary mb-3"
+          onclick="handleLogout()"
+        >
+          로그아웃
+        </button>
+        <div id="username"></div>
+      </div>
+    </ul>
+  </nav>
+  <div id="body_cont" style="padding-top: 10%;">
     <h1 id="title">타이틀</h1>
     <p id="author">작성자</p>
     <img id="image" class="restaurant_img"></img>
@@ -36,6 +75,7 @@
         댓글 등록
       </button>
     </div>
+  </div>
      
 </body>
 </html>

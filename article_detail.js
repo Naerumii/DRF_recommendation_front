@@ -54,7 +54,7 @@ function updateMode() {
   input_content.innerText = content.innerHTML; // 안하면 공란처리됨
   input_content.rows = 3;
 
-  const body = document.body;
+  const body = document.getElementById("body_cont");;
   body.insertBefore(input_title, title);
   body.insertBefore(input_content, content);
 
