@@ -10,7 +10,46 @@
     <script src="api.js"></script>
     <title>게시물 작성</title>
 </head>
+<nav>
+  <div class="logo">
+    <img src="[image].png" alt="Logo Image" onclick="location.href='/index.html'"/>
+  </div>
+  <ul class="nav-links">
+    <div class="leftbox">
+        <li>
+          <a href="#" onclick="loadRecommends(); this.onclick=null"
+            >추천받기</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="location.href='/article_list.html'"
+            >게시글 보기</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="location.href='/article_create.html'"
+            >게시글 작성</a
+          >
+        </li>
+        <li>
+          <a href="#" onclick="location.href='/profile.html'">프로필</a>
+        </li>
+    </div>
+    <div class="rightbox">
+      <button
+        id="loginout"
+        type="button"
+        class="btn btn-primary mb-3"
+        onclick="handleLogout()"
+      >
+        로그아웃
+      </button>
+      <div id="username"></div>
+    </div>
+  </ul>
+</nav>
 <body>
+  <div style="padding-top: 10%;">
     <form>
         <h1>게시물 작성</h1>
         <div class="mb-3">
@@ -31,5 +70,6 @@
         </div>
         <button type="button" class="btn btn-primary mb-3" onclick="createArticle()">게시</button>
     </form>
+  </div>
 </body>
 </html>

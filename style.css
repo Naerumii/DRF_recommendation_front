@@ -89,42 +89,7 @@
 
   /* 게시글 끝 */
   /* 인덱스 페이지 */
-/* 상세보기 모달창 */
-#img_modal{
-    transition-duration: 0.3s;
-    cursor : pointer;
-}
-#img_modal:active{
-    margin-left: 5px;
-    margin-top: 5px;
-    box-shadow: none;
-}
 
-.modal_box{
-    display: none;
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    margin: -250px 0 0 -250px;
-    background:#eee;
-    z-index: 2;
-}
-.modal_close{
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    top: -30px;
-    right: 0;
-}
-.modal_close> a{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background:url(https://img.icons8.com/metro/26/000000/close-window.png);
-    text-indent: -9999px;
-}
 /* 상세보기 모달창 끝 */
 * {
   padding: 0;
@@ -211,3 +176,16 @@ nav {
     width: 15%;
   }
 /* nav 끝 */
+/* 추천보기 */
+/* Style the Image Used to Trigger the Modal */
+img {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+img:hover {opacity: 0.7;}
+
+.grid-product{
+  border-radius: 3px;
+}
