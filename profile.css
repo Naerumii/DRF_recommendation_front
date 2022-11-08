@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'roboot', sans-serif;
+  text-decoration: none;
+}
+body {
+  background-color: rgb(255, 190, 115);
+}
+  
+  .rightbox {
+    display: flex;
+    list-style: none;
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    width: 15%;
+  }
+  
+
+/*--- section welcome ---*/
+.welcome {
+  width: 100%;
+  height: 500px;
+  background-image: url("요리.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+/*--- section product ---*/
+.product-mac,
+.product-iphone,
+.product-watch,
+.product-ipad {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  cursor: pointer;
+}
+.product-mac h2,
+.product-iphone h2,
+.product-watch h2,
+.product-ipad h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.container {
+  width: 1070px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.grid-product {
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+.grid-product:hover {
+  background: #e1e1e1;
+}
+.grid-product img {
+  width: 300px;
+}
+.grid-detail {
+  margin: 20px 0;
+  text-align: center;
+}
+.grid-detail p:last-child {
+  transition: .5s;
+  margin-top: 10px;
+}
+.grid-product:hover > .grid-detail p:last-child {
+  color: #3498db;
+}
+
+/*-------*/
+.grid-full {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.grid-product-full {
+  background: #f1f1f1;
+  grid-column: span 3;
+  display: flex;
+  position: relative;
+}
+.grid-detail-sum {
+  position: absolute;
+  top: 35%;
+  right: 12%;
+  text-align: center;
+}
+.grid-detail-sum h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.grid-detail-sum p {
+  margin: 20px 0;
+}
+.grid-detail-sum a {
+  color: #3498db;
+}
+.grid-detail-sum a:hover {
+  text-decoration: underline;
+}
+
+/*--- footer ---*/
+footer {
+  width: 100%;
+  height: 100px;
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-main {
+  width: 1070px;
+}
+.footer-detail {
+  font-size: .7rem;
+  color: #95a5a6;
+  padding: 20px 0;
+  border-bottom: 1px solid #bdc3c7;
+}
+.footer-detail a {
+  color: #2c3e50;
+}
+.footer-detail a:hover {
+  text-decoration: underline;
+}
+
+.modal-login {
+  color: #636363;
+  width: 350px;
+}
+.modal-login .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.modal-login .modal-header {
+  border-bottom: none;
+  position: relative;
+  justify-content: center;
+}
+.modal-login h4 {
+  text-align: center;
+  font-size: 26px;
+  color: black;
+  margin: 30px 0 -15px;
+}
+.modal-login .form-control:focus {
+  border-color: #70c5c0;
+}
+.modal-login .form-control,
+.modal-login .btn {
+  min-height: 40px;
+  border-radius: 3px;
+}
+.modal-login .close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.modal-login .modal-footer {
+  background: #ecf0f1;
+  border-color: #dee4e7;
+  text-align: center;
+  justify-content: center;
+  margin: 0 -20px -20px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.modal-login .modal-footer a {
+  color: #999;
+}
+.modal-login .avatar {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -70px;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  z-index: 9;
+  background: rgb(255, 190, 115);
+  padding: 15px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.modal-login .avatar img {
+  width: 100%;
+}
+.modal-login.modal-dialog {
+  margin-top: 80px;
+}
+.modal-login .btn {
+  color: #fff;
+  border-radius: 4px;
+  background: #fe4321;
+  text-decoration: none;
+  transition: all 0.4s;
+  line-height: normal;
+  border: none;
+}
+.modal-login .btn:hover,
+.modal-login .btn:focus {
+  background: rgb(255, 190, 115);
+  outline: none;
+}
